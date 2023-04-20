@@ -1,10 +1,7 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 /**
  * main - main function
- * @argc: ..
+ * @argc: number of arguments
  * @argv: ..
  * Return: int
  */

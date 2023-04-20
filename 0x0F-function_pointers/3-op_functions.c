@@ -1,7 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 /**
  * op_add - sum of a and b
  * @a: first int
