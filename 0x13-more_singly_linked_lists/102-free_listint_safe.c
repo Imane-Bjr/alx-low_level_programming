@@ -18,6 +18,7 @@ size_t free_listint_safe(listint_t **h)
 		if (var > 0)
 		{
 			p = (*h)->next;
+			free(*h);
 			*h = p;
 			elem++;
 		}
