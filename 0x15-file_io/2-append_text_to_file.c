@@ -21,7 +21,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		for (leng = 0; text_content[leng];)
 			leng++;
-		numb_w = write(cont, text_content, leng);
+		numb_w = write(cont, text_content, leng - 1);
 		if (numb_w == -1)
 			return (-1);
 	}
