@@ -19,8 +19,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	cont = open(filename, O_WRONLY | O_APPEND);
 	numb_w = write(cont, text_content, leng);
-	if (count == -1 || numb_w == -1)
-			return (-1);
+	if (cont == -1 || numb_w == -1)
+		return (-1);
+
 	close(cont);
 	return (1);
 }
