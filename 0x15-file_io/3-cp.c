@@ -58,7 +58,7 @@ void check99(ssize_t check, char *file, int desc_from, int desc_to)
 /**
  * check100 - checks that file were closed properly
  * @check: checks true or false
- * @file_des: file description
+ * @file_desc: file description
  * Return: void
  */
 void check100(int check, int file_desc)
