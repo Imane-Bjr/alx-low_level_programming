@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 	ssize_t len_r, len_w;
 	mode_t f;
 
-	chack(97);
+	check97(argc);
 	desc_from = open(argv[1], O_RDONLY);
 	check98((ssize_t)desc_from, argv[1], -1, -1);
 	f = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
