@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -58,16 +58,14 @@ void check99(ssize_t check, char *file, int desc_from, int desc_to)
 /**
  * check100 - checks that file were closed properly
  * @check: checks true or false
- * @file: file name
- * @desc_from: file desc of file_from
- * @desc_to: file desc of file_to
+ * @file_des: file description
  * Return: void
  */
-void check100(ssize_t check, char *file, int desc_from, int desc_to)
+void check100(int check, int file_desc)
 {
 	if (check == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_desc);
 		exit(100);
 	}
 }
